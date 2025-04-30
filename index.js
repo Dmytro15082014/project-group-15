@@ -8,7 +8,6 @@ import{S as At,N as kt,K as zt,i as $t,A as Ot}from"./assets/vendor-BMbArRGt.js"
         <div class="review-bottom">
         <img class="review-avatar"
             src=${V.icon}
-            srcset="${V.icon} 1x, ${V.icon2x} 2x"
             width="40"
             height="40"
             alt="${V.name}"
