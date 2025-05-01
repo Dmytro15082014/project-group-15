@@ -5,6 +5,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 
+import {getReviews} from './api'
+
 const reviewsLists = document.querySelector('.swiper-wrapper');
 
 // Клас адаптовано під API
@@ -16,11 +18,14 @@ class Reviews {
   }
 }
 
+const limit = 6;
+
 // Функція завантаження
 async function loadReviews() {
   try {
-    const { data } = await axios.get('https://portfolio-js.b.goit.study/api/reviews?limit=6');
-
+    //const { data } = await axios.get('https://portfolio-js.b.goit.study/api/reviews?limit=6');
+    const { data } = await getReviews(limit);
+ 
     const reviewList = data.map(item => new Reviews(item));
 
     reviewsLists.innerHTML = reviewList

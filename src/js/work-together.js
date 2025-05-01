@@ -1,6 +1,8 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import {setFormEmail} from './api';
+
 const emailInput = document.getElementById('user-email');
 const statusIcon = document.getElementById('email-status');
 const errorMsg = document.getElementById('email-error');
@@ -37,12 +39,13 @@ form.addEventListener('submit', async function (e) {
   const email = form.elements['user-email'].value.trim();
   const comment = form.elements['user-comment'].value.trim();
 
+  const options = {
+    email,
+    comment,
+  };
+  
   try {
-    const response = await fetch('https://portfolio-js.b.goit.study/api/requests', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, comment }),
-    });
+    const response = await setFormEmail(options);
 
     if (!response.ok) throw new Error('Request failed');
 
