@@ -11,7 +11,7 @@ import{S as Gt,N as Nt,K as Bt,a as Ht,i as Xt,A as Yt}from"./assets/vendor-BXph
           <button class="visit-button">
             <p class="project-button-text">VISIT</p>
             <svg class="projects-arrow-icon" width="24" height="24">
-              <use href="/img/projects/arrow-icon.svg#arrow-icon"></use>
+              <use href="img/projects/arrow-icon.svg#arrow-icon"></use>
             </svg>
           </button>
         </div>
