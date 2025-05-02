@@ -14,19 +14,19 @@
     <script type="module" crossorigin src="/project-group-15/index.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group-15/assets/vendor-BXphtQrx.js">
     <link rel="stylesheet" crossorigin href="/project-group-15/assets/vendor-Ug69zcqz.css">
-    <link rel="stylesheet" crossorigin href="/project-group-15/assets/index-Dq_7IzvX.css">
+    <link rel="stylesheet" crossorigin href="/project-group-15/assets/index-DWT1W5qe.css">
   </head>
   <body>
     <header class="header" id="header">
   <div class="container header-container">
-    <a href="./index.html" class="header-logo"
-      >Lloyd<span class="accent-light">Jefferson.</span></a
-    >
+    <a href="#home" class="header-logo"
+      ><p>Lloyd</p>
+      <span class="accent-light">Jefferson.</span></a>
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li>
-          <label class="switch-theme"
-            ><input type="checkbox" id="theme-change" /><span
+          <label class="toggle"
+            ><input type="checkbox" name="toggle" class="switch" /><span
               class="slider"
             ></span
           ></label>
@@ -51,7 +51,8 @@
   <div class="mobile-menu">
     <div class="mobile-menu-container">
       <a href="#home" class="mobile-header-logo">
-        Lloyd<span class="accent-light">Jefferson.</span>
+        <p>Lloyd</p>
+        <span class="accent-light">Jefferson.</span>
       </a>
       <button class="mobile-menu-close">
         <svg class="modal-close-btn-icon" width="32" height="32">
@@ -79,8 +80,11 @@
         <h1 class="main-title">
           <span class="title-first">HELLO, I AM</span>
           <picture class="web-dev-jpg">
-            <source srcset="/project-group-15/assets/web-dev@2x-DIOs90hc.png 2x, /project-group-15/assets/web-dev-BrlLob4C.png 1x" />
-            <img src="/project-group-15/assets/web-dev-BrlLob4C.png" alt="web-dev" />
+            <source
+              class="dev-jpg"
+              srcset="/img/img-dev@2x.jpg 2x, /img/img-dev.jpg 1x"
+            />
+            <img class="dev-jpg" src="/img/img-dev.jpg" alt="web-dev" />
           </picture>
           <span class="head-wrap accent-light">FULLSTACK DEVELOPER</span>
         </h1>
@@ -105,42 +109,42 @@
         </p>
       </div>
     </div>
-  </div>
-  <div class="social-media-container">
-    <ul class="social-media">
-      <li>
-        <a
-          href="https://www.instagram.com/goitclub"
-          class="social-link"
-          target="blank"
-          >Instagram</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.facebook.com/goITclub"
-          class="social-link"
-          target="blank"
-          >Facebook</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/school/goit-start-your-career-in-it"
-          class="social-link"
-          target="blank"
-          >LinkedIn</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/Dmytro15082014/project-group-15"
-          class="social-link"
-          target="blank"
-          >GitHub</a
-        >
-      </li>
-    </ul>
+    <div class="social-media-container">
+      <ul class="social-media">
+        <li>
+          <a
+            href="https://www.instagram.com/goitclub"
+            class="social-link"
+            target="blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/goITclub"
+            class="social-link"
+            target="blank"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            class="social-link"
+            target="blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/Dmytro15082014/project-group-15"
+            class="social-link"
+            target="blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -397,94 +401,205 @@
       <section id="faq">
   <div class="container">
     <div class="side">
-      <h2>frequently
-        asked
-        <span class=".accent-light">question</span></h2>
-      <img class="faq-decor" src="/project-group-15/assets/decor%20bg%204-desktop-B68ubzS7.webp" alt="green decorative dots">
+      <h2>frequently asked <span class=".accent-light">question</span></h2>
+      <img
+        class="faq-decor"
+        src="/project-group-15/assets/decor%20bg%204-desktop-B68ubzS7.webp"
+        alt="green decorative dots"
+      />
     </div>
 
     <div class="ac" id="accordion">
-
       <div class="ac-item">
         <button class="ac-trigger" aria-expanded="false">
-          <span class="accordion-title">WHAT PROGRAMMING LANGUAGES ARE MOST OFTEN USED IN YOUR PROJECT?</span>
-          <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+          <span class="accordion-title"
+            ><p>
+              WHAT PROGRAMMING LANGUAGES ARE MOST OFTEN USED IN YOUR PROJECT?
+            </p></span
+          >
+          <svg
+            class="accordion-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 15L12 9L6 15"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
         </button>
         <div class="ac-panel">
-          <p>In the field of web development, there are various technologies and programming languages.
-             Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
         </div>
       </div>
 
       <div class="ac-item">
         <button class="ac-trigger el-1" aria-expanded="false">
-          <span class="accordion-title ">WHAT ARE THE DEADLINES FOR THE PROJECT?</span>
-          <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+          <span class="accordion-title"
+            ><p>WHAT ARE THE DEADLINES FOR THE PROJECT?</p></span
+          >
+          <svg
+            class="accordion-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 15L12 9L6 15"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
         </button>
         <div class="ac-panel">
-          <p>The terms of project implementation depend to a large extent on a number of factors,
-             such as the scope of the project, its complexity, and the availability of resources. 
-            Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+          <p>
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
         </div>
       </div>
 
       <div class="ac-item">
         <button class="ac-trigger el-2" aria-expanded="false">
-          <span class="accordion-title">WHAT PAYMENT METHODS DO YOU ACCEPT?</span>
-          <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+          <span class="accordion-title"
+            ><p>WHAT PAYMENT METHODS DO YOU ACCEPT?</p></span
+          >
+          <svg
+            class="accordion-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 15L12 9L6 15"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
         </button>
         <div class="ac-panel">
-          <p>Payment through credit and debit cards such as Visa, MasterCard, 
-            specialized electronic payment systems such as PayPal, 
-            as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+          <p>
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
         </div>
       </div>
 
       <div class="ac-item">
         <button class="ac-trigger el-3" aria-expanded="false">
-          <span class="accordion-title">HOW CAN I CONTACT YOU?</span>
-          <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+          <span class="accordion-title"><p>HOW CAN I CONTACT YOU?</p></span>
+          <svg
+            class="accordion-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 15L12 9L6 15"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
         </button>
         <div class="ac-panel">
-          <p>In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
         </div>
       </div>
 
       <div class="ac-item">
         <button class="ac-trigger el-4" aria-expanded="false">
-          <span class="accordion-title">DO YOU PROVIDE ADVICE OR SUPPORT?</span>
-          <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+          <span class="accordion-title"
+            ><p>DO YOU PROVIDE ADVICE OR SUPPORT?</p></span
+          >
+          <svg
+            class="accordion-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 15L12 9L6 15"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
         </button>
         <div class="ac-panel">
-          <p>The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+          <p>
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
         </div>
       </div>
 
       <div class="ac-item">
         <button class="ac-trigger" aria-expanded="false">
-          <span class="accordion-title">What does the process of developing a software product look like from idea to implementation?</span>
-          <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+          <span class="accordion-title"
+            ><p>
+              What does the process of developing a software product look like
+              from idea to implementation?
+            </p></span
+          >
+          <svg
+            class="accordion-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 15L12 9L6 15"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
         </button>
         <div class="ac-panel">
-          <p>Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+          <p>
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
+
       <section id="reviews">
   <div class="container">
     <h2 class="reviews-title">Reviews</h2>
@@ -502,6 +617,7 @@
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="swiper-button-prev-svg"
           >
             <path
               d="M20 12H4.00001"
@@ -526,6 +642,7 @@
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="swiper-button-next-svg"
           >
             <path
               d="M4 12H20"
