@@ -11,12 +11,14 @@ import{S as Rt,N as Yt,K as qt,a as Vt,i as Ke,A as Wt}from"./assets/vendor-BXph
         <p>${j}</p>
         <div class="project-title">
           <p>${Y}</p>
-          <button class="visit-button">
-            <p class="project-button-text">VISIT</p>
-            <svg class="projects-arrow-icon" width="18" height="18">
-              <use href="${ns}"></use>
-            </svg>
-          </button>
+          <p class="project-button-text">
+            <button class="visit-button">
+              VISIT
+              <svg class="projects-arrow-icon" width="18" height="18">
+                <use href="${ns}"></use>
+              </svg>
+            </button>
+          </p>
         </div>
       </div>
     `,_.querySelector(".visit-button").addEventListener("click",()=>{window.open(B,"_blank","noopener,noreferrer")}),_}function vs(){Ze.slice(0,yt).forEach(R=>{const H=Et(R);wt.appendChild(H)})}function ws(){Ze.slice(ze,ze+3).forEach(R=>{const H=Et(R);wt.appendChild(H)}),ze+=3,ze>=Ze.length&&(bt.style.display="none")}document.addEventListener("DOMContentLoaded",vs);bt.addEventListener("click",ws);const gt=document.querySelector(".swiper-wrapper");class bs{constructor({author:R,avatar_url:H,review:j}){this.name=R,this.review=j,this.icon=H}}async function ys(){try{const{data:W}=await Vt.get("https://portfolio-js.b.goit.study/api/reviews?limit=6"),R=W.map(H=>new bs(H));gt.innerHTML=R.map(H=>`<li class="review-cart swiper-slide">
